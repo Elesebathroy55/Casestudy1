@@ -18,17 +18,7 @@
     xhttp.send();
     
 /*
-    function Selectstate() {  
-        var Itemselected = [];  
-        $("[id*=CheckBoxList1] input:checked").each(function () {  
-            Itemselected.push($(this).val());  
-        });  
-        if (Itemselected.length > 0) {  
-            alert("Selected States: " + Itemselected);  
-        } else {  
-            alert("No One state selected:");  
-        }  
-    }  
+   
     
 function getPost(){
     setTimeout(function(){
