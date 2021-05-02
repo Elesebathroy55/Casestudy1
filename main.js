@@ -31,8 +31,8 @@ function ajax(){
             `<tr>
             <th>     </th>
             <th>Things To-Do : Title</th>
-            <th> Status </th>
-            </tr>`;
+            <th>  </th>
+            </tr><tr></tr>`;
         
         // Loop to access all rows
        
@@ -40,16 +40,16 @@ function ajax(){
           if (data[i].completed==true){
             tab += `<tr>
             
-                <td><input type = "checkbox" name= "check" id ="check" class="check" checked = "checked" disabled= "disabled" ></td>
-                <td>${data[i].title}</td>
-                <td>Completed</td>
-                </tr>`;}
-        else {
-                tab += `<tr>
-                <td><input type = "checkbox" name= "check" id ="check" class="check" onclick = "Mycheck()"></td>
+                <td><div class="checker"><span class="checker"><input type = "checkbox" name= "check" id ="check" class="check" checked = "checked" disabled= "disabled" ></span></div></td>
                 <td>${data[i].title}</td>
                 <td></td>
-                </tr>`;
+                </tr><tr></tr>`;}
+        else {
+                tab += `<tr>
+                <td><div class="checker"><span class="checker"><input type = "checkbox" name= "check" id ="check" class="check" onclick = "Mycheck()"></span></div></td>
+                <td>${data[i].title}</td>
+                <td></td>
+                </tr><tr></tr>`;
             }
     
         }
